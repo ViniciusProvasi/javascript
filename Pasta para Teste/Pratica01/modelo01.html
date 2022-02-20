@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Calculador de Juros Simples</h1>
+    </header>
+    <section>
+        <div >
+            <p>
+                Formula Juros = J = C.i.n<br>
+                Formula Montante = M = C+J
+            </p>
+            <p>Capital:
+                <input type="number" name="capital" id="capital">
+            </p>
+            <p>
+                Taxa de juros:
+                <input type="number" name="taxa" id="taxa">
+            </p>
+            <p>
+                Tempo:
+                <input type="number" name="tempo" id="tempo">
+            </p>
+            <p>
+                <input type="button" value="calcular" onclick="calcular()">
+            </p>
+        </div>     
+        <div  id = "res" >
+            Preencha para calcular...
+        </div>
+        <div>
+            <p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;Calculadora</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa em JS</title>
+    <style>
+        body{
+            background-color: black;
+            color : white;
+            font: normal 20pt Arial;
+        }
+        h1{
+            color:blue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Olá mundo</h1>
+    <p>Me livrei dá maldição</p>
+    <script>
+        var n1 = Number(window.prompt("Digite um número"))//String, tem que ser convertida para Inteira ou Float
+        var n2 = Number(window.prompt("Digite outro número"))//String, tem que ser convertida para Inteira ou Float(O Number sozinho deixa com que o JS indetifique pra você mas nem sempre será usada, o Number.parseInt ou Float,força o JS a colocar naquela condição seja Inteira ou Real)
+        var s = n1 + n2
+        window.alert(`A soma de ${n1} e ${n2} é igual a ${s}`)
+    </script>
+</body>
+</html>

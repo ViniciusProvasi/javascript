@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Titulo de Eleitor</title>
+</head>
+<body>
+    <h1>Insira sua idade</h1>
+    
+    <input type="text" name="txttitulo" id="txttitulo">
+    <input type="button" value="Calcular" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular(){
+            var txtti = window.document.getElementById('txttitulo')
+            var res = window.document.getElementById('res')
+            var idade = Number(txtti.value)
+            res.innerHTML = `Sua idade é ${idade}`
+            if(idade <16){
+                res.innerHTML = `Você tem <strong>${idade}</strong> e não é obrigatório votar`
+            }else if(idade < 18 || idade >70){
+                res.innerHTML =`Você tem <strong>${idade}</strong> é opcional votar`
+            }else{
+                res.innerHTML =`Você tem <strong>${idade}</strong> é obrigatório votar`
+            }
+
+        }
+    </script>
+</body>
+</html>

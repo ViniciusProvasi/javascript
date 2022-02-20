@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia da Semana</title>
+</head>
+<body>
+    <h1>Qual dia dá semana é hoje</h1>
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id = "res">
+
+    </div>
+
+    <script>
+        function verificar() {
+            var  agora = new Date()
+            var diasSen = agora.getDay()
+            var res =  window.document.getElementById('res')
+            switch(diasSen){// entre parentes,tem que ter a expressão(valor dá vareavel)
+            case 0://EM JS, o 0 representa domigo e assim sussetivamente
+                res.innerHTML = `Hoje é Domingo`
+                break
+            case 1:
+                res.innerHTML = `Hoje é Segunda-Feira` 
+                break
+            case 2:
+                res.innerHTML = `Hoje é Terça-Feira`
+                break
+            case 3:
+                res.innerHTML = `Hoje é Quarta-Feira`
+                break
+            case 4:
+                res.innerHTML = `Hoje é Quinta-feira`
+                break
+            case 5:
+                res.innerHTML = `Hoje é Sexta-Cheira`
+                break
+            default:
+                res.innerHTML = `Hoje é Sabado`
+                break
+            }
+        }
+    </script>
+</body>
+</html>
